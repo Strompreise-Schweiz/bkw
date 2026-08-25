@@ -1,0 +1,8 @@
+{
+  "slug": "bkw",
+  "name": "BKW Energie AG",
+  "country": "CH",
+  "api_url": "https://api.bkw.ch/api/dyntariffs/v1/tariffs",
+  "website": "https://www.bkw.ch",
+  "normalizer": "generic_vse"
+}
