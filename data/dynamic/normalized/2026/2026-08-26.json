@@ -6,10 +6,10 @@
     "country": "CH",
     "api_url": "https://api.bkw.ch/api/dyntariffs/v1/tariffs",
     "website": "https://www.bkw.ch",
-    "publication_timestamp": "2026-08-25T21:35:00Z",
+    "publication_timestamp": "2026-08-25T21:40:00Z",
     "attribution": "Data sourced from BKW Energie AG (https://www.bkw.ch), archived by Strompreise-Schweiz (https://github.com/Strompreise-Schweiz/bkw)."
   },
-  "retrieved_at": "2026-08-25T21:36:20+00:00",
+  "retrieved_at": "2026-08-25T21:43:49+00:00",
   "date": "2026-08-26",
   "tariff_type": "feed_in",
   "timezone": "UTC",
