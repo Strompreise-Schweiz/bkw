@@ -1,64 +1,48 @@
-# BKW tariff archive
+# BKW Energie AG
 
-A daily archive of BKW's dynamic electricity tariff data, turned into a
-static, file-based "REST API" you can query directly via
-`raw.githubusercontent.com` — no server, no auth, no rate limits beyond
-GitHub's own.
+Tariff data of BKW Energie AG, published by the
+[Strompreise Schweiz](https://github.com/Strompreise-Schweiz) initiative. All logic lives in
+[`tariff-core`](https://github.com/Strompreise-Schweiz/tariff-core); this repo holds configuration,
+corrections and data.
 
-Part of the [Strompreise Schweiz](https://github.com/Strompreise-Schweiz)
-initiative. The actual fetch/normalize logic lives centrally in
-[`tariff-etl`](https://github.com/Strompreise-Schweiz/tariff-etl) — this repo
-just holds [`config/source.json`](config/source.json) plus the archived
-data. See tariff-etl's [`SCHEMA.md`](https://github.com/Strompreise-Schweiz/tariff-etl/blob/main/SCHEMA.md)
-for the exact file layout and JSON schema.
+Everything is listed in `https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/index.json`.
 
-A [GitHub Actions workflow](.github/workflows/fetch-tariffs.yml) runs once a
-day (17:30 UTC, i.e. always after 18:00 in Europe/Zurich) and commits a
-fresh snapshot.
+## Dynamic tariffs
 
-**Note:** BKW's dynamic tariff API (`dyntariffs`) only publishes a **feed-in**
-tariff (`Einspeisevergütung` — what a prosumer is paid for feeding power back
-into the grid), not a consumption tariff. Every file here has
-`tariff_type: "feed_in"`. BKW's API also already publishes the next Swiss
-calendar day's prices in advance (unlike EKZ, which always returns the
-current day) — this is why the daily fetch matters, and why it's scheduled
-after 18:00.
+These URLs never change. Each file holds today and, once published, tomorrow.
 
-## Usage
+| Tariff | Stable URL |
+|---|---|
+| BKW Rückliefertarif dynamisch | `https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/dynamic/feed-in/latest.json` |
 
-```
-data/dynamic/raw/<year>/<date>.json          # untouched BKW API response
-data/dynamic/vse/<year>/<date>.json          # same data, Swiss local time
-data/dynamic/normalized/<year>/<date>.json   # common cross-org schema
-```
+The format is the VSE format (HDN 2025, chapter 7.4) with an additional `_meta` block.
+Timestamps are Swiss local time with an offset, for example `2026-11-02T00:00:00+01:00`.
+Parse the offset and do not assume 96 intervals: a day has 92 in March and 100 in October.
+Check `_meta.days[].complete` and `_meta.valid_to` before you use the data.
 
-For example, a given day's normalized feed-in tariff:
+Archive per day: `data/dynamic/<id>/{raw,vse,normalized}/<year>/<date>.json`.
 
-```
-https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/dynamic/normalized/2026/2026-08-26.json
-```
+## Static tariffs (constant, multilevel)
 
-Swap the date to fetch any other day.
+| What | Stable URL |
+|---|---|
+| Current year | `https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/tariffs/current.json` |
+| A given year | `https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/tariffs/<year>.json` |
+
+The format is the VSE format (NNMV annex 10, OpenAPI) with additional fields: `tariffs[].id`,
+`products` (which tariffs belong together) and `_meta` (source, repairs and corrections).
+Prices exclude VAT.
+
+## Structure
+
+| Path | Content | Who changes it |
+|---|---|---|
+| `config/source.json` | Data sources | Person |
+| `curation/<year>.json` | Corrections and product mapping, each with a reason | Person |
+| `data/**` | Generated data | GitHub Actions only |
+
+Format details: [`SCHEMA.md`](https://github.com/Strompreise-Schweiz/tariff-core/blob/main/SCHEMA.md).
 
 ## License
 
-This repository is dual-licensed:
-
-- **Code** (everything outside `data/`) — [MIT](LICENSE).
-- **Data** (`data/**`) — [Creative Commons Attribution 4.0](data/LICENSE)
-  (CC BY 4.0). You're free to use, share, and build on the data, including
-  commercially, as long as you credit both BKW (the original data source)
-  and this repository. Each normalized JSON file carries its own
-  `source.attribution` string for exactly this reason.
-
-This project archives and redistributes BKW's public API output with
-attribution. It is not affiliated with, and not endorsed by, BKW.
-
-## Running it yourself
-
-```bash
-python3 /path/to/tariff-etl/engine/fetch_and_normalize.py
-```
-
-Run from within this repo's root (needs `config/source.json`, which is
-already here). Stdlib-only, no dependencies to install.
+See [`data/LICENSE`](data/LICENSE) for the data and [`LICENSE`](LICENSE) for the code.

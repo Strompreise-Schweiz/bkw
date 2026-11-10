@@ -1,8 +1,28 @@
 {
+  "$schema": "https://raw.githubusercontent.com/Strompreise-Schweiz/tariff-core/main/schemas/source-config/v1.schema.json",
   "slug": "bkw",
   "name": "BKW Energie AG",
   "country": "CH",
-  "api_url": "https://api.bkw.ch/api/dyntariffs/v1/tariffs",
   "website": "https://www.bkw.ch",
-  "normalizer": "generic_vse"
+  "vse_id": "CH10222012345",
+  "data_license": "CC-BY-4.0",
+  "dynamic": [
+    {
+      "id": "feed-in",
+      "name": "BKW dynamic feed-in remuneration",
+      "api_url": "https://api.bkw.ch/api/dyntariffs/v1/tariffs",
+      "components": [
+        "feed_in"
+      ]
+    }
+  ],
+  "static": {
+    "sources": [
+      {
+        "name": "bkw-all",
+        "url": "https://www.bkw.ch/de/tarife-json",
+        "note": "URL from the correspondence with EKZ. vse_id from the NNMV annex 10 example. Verify both on the first run."
+      }
+    ]
+  }
 }
