@@ -1,0 +1,13 @@
+{
+  "$comment": "Stable entry point for this organization. All URLs below stay valid.",
+  "organization": "BKW Energie AG",
+  "slug": "bkw",
+  "vse_id": "CH10222012345",
+  "website": "https://www.bkw.ch",
+  "license": "CC-BY-4.0",
+  "static": {
+    "current": null,
+    "years": {}
+  },
+  "dynamic": []
+}
