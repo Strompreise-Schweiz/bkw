@@ -9,7 +9,9 @@
   "site": "https://data.strompreise-schweiz.ch/bkw/",
   "static": {
     "current": null,
-    "years": {}
+    "years": {
+      "2027": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/tariffs/2027.json"
+    }
   },
   "vse_conformance": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/vse-conformance.json",
   "status": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/status.json",
