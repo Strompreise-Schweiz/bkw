@@ -1,0 +1,45 @@
+{
+  "$comment": "Summary of the checks of this utility, for https://data.strompreise-schweiz.ch/status.html.",
+  "utility": "BKW Energie AG",
+  "slug": "bkw",
+  "years": [
+    {
+      "year": 2026,
+      "blocked": true,
+      "online": false,
+      "errors": 2305,
+      "warnings": 0,
+      "accepted": 0,
+      "codes": {
+        "schema": 2305
+      }
+    },
+    {
+      "year": 2027,
+      "blocked": true,
+      "online": false,
+      "errors": 2049,
+      "warnings": 0,
+      "accepted": 0,
+      "codes": {
+        "schema": 2049
+      }
+    }
+  ],
+  "vse": {
+    "sources": [
+      {
+        "name": "bkw-all",
+        "1.0.0": {
+          "valid": false,
+          "errors": 6428
+        },
+        "1.0.1": {
+          "valid": false,
+          "errors": 4354
+        }
+      }
+    ],
+    "published": []
+  }
+}

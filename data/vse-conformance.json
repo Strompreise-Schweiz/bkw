@@ -1,0 +1,99 @@
+{
+  "$comment": "Whether the files follow the OpenAPI definitions of the VSE. sources are the files as the utility published them, published the files of this project. Information only: it does not block publication.",
+  "definitions": {
+    "1.0.0": "https://raw.githubusercontent.com/Strompreise-Schweiz/tariff-core/main/schemas/vse/ch-electricity-tariffs-openapi-1.0.0.yaml",
+    "1.0.1": "https://raw.githubusercontent.com/Strompreise-Schweiz/tariff-core/main/schemas/vse/ch-electricity-tariffs-openapi-1.0.1.yaml"
+  },
+  "sources": [
+    {
+      "name": "bkw-all",
+      "url": "https://www.bkw.ch/de/tarife-json",
+      "sha256": "7b97b24273dc1dba524e8f8663aa4259bf320343761ca34bcd6d903fc7659911",
+      "results": {
+        "1.0.0": {
+          "valid": false,
+          "errors": 6428,
+          "summary": [
+            {
+              "path": "tariffs/*/endDate",
+              "message": "must match format \"date\"",
+              "count": 1960
+            },
+            {
+              "path": "tariffs/*/prices/municipalityTaxes/*/municipalityEnergy/*",
+              "message": "must have required property 'weekdays'",
+              "count": 1960
+            },
+            {
+              "path": "tariffs/*/startDate",
+              "message": "must match format \"date\"",
+              "count": 1960
+            },
+            {
+              "path": "tariffs/*/customerVoltageLevel",
+              "message": "must be integer",
+              "count": 425
+            },
+            {
+              "path": "tariffs/*/prices/energy/*/weekdays/*",
+              "message": "must be equal to one of the allowed values: Mo, Tu, We, Th, Fr, Sa, So",
+              "count": 52
+            },
+            {
+              "path": "tariffs/*/prices/power/*/weekdays/*",
+              "message": "must be equal to one of the allowed values: Mo, Tu, We, Th, Fr, Sa, So",
+              "count": 16
+            },
+            {
+              "path": "tariffs/*/prices/reactivePower/*/weekdays/*",
+              "message": "must be equal to one of the allowed values: Mo, Tu, We, Th, Fr, Sa, So",
+              "count": 16
+            },
+            {
+              "path": "tariffs/*",
+              "message": "must have required property 'customerVoltageLevel'",
+              "count": 12
+            },
+            {
+              "path": "tariffs/*/prices/municipalityTaxes/*/municipalityNumber",
+              "message": "must be integer",
+              "count": 9
+            },
+            {
+              "path": "tariffs/*/prices/energy/*",
+              "message": "must have required property 'weekdays'",
+              "count": 8
+            }
+          ]
+        },
+        "1.0.1": {
+          "valid": false,
+          "errors": 4354,
+          "summary": [
+            {
+              "path": "tariffs/*/endDate",
+              "message": "must match format \"date\"",
+              "count": 1960
+            },
+            {
+              "path": "tariffs/*/startDate",
+              "message": "must match format \"date\"",
+              "count": 1960
+            },
+            {
+              "path": "tariffs/*/customerVoltageLevel",
+              "message": "must be integer",
+              "count": 425
+            },
+            {
+              "path": "tariffs/*/prices/municipalityTaxes/*/municipalityNumber",
+              "message": "must be integer",
+              "count": 9
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "published": []
+}
