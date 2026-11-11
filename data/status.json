@@ -47,7 +47,7 @@
         "file": "tariffs/2026.json",
         "1.0.0": {
           "valid": false,
-          "errors": 48
+          "errors": 61
         },
         "1.0.1": {
           "valid": true,
@@ -58,7 +58,7 @@
         "file": "tariffs/2027.json",
         "1.0.0": {
           "valid": false,
-          "errors": 48
+          "errors": 61
         },
         "1.0.1": {
           "valid": true,
