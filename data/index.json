@@ -1,13 +1,28 @@
 {
-  "$comment": "Stable entry point for this organization. All URLs below stay valid.",
+  "$comment": "Stable entry point for this organization. All URLs below stay valid. Every path under data/ is also served under site.",
   "organization": "BKW Energie AG",
   "slug": "bkw",
   "vse_id": "CH10222012345",
   "website": "https://www.bkw.ch",
   "license": "CC-BY-4.0",
+  "repository": "https://github.com/Strompreise-Schweiz/bkw",
+  "site": "https://data.strompreise-schweiz.ch/bkw/",
   "static": {
     "current": null,
     "years": {}
   },
-  "dynamic": []
+  "dynamic": [
+    {
+      "id": "feed-in",
+      "name": "BKW dynamic feed-in remuneration",
+      "components": [
+        "feed_in"
+      ],
+      "valid_from": null,
+      "valid_to": null,
+      "latest": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/dynamic/feed-in/latest.json",
+      "archive": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/dynamic/feed-in/vse/{year}/{date}.json",
+      "source": "https://api.bkw.ch/api/dyntariffs/v1/tariffs"
+    }
+  ]
 }
