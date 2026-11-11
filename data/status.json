@@ -5,13 +5,14 @@
   "years": [
     {
       "year": 2026,
-      "blocked": true,
-      "online": false,
-      "errors": 9,
-      "warnings": 0,
+      "blocked": false,
+      "online": true,
+      "errors": 0,
+      "warnings": 9,
       "accepted": 0,
+      "excluded": 9,
       "codes": {
-        "schema": 9
+        "indistinguishable_tariffs": 9
       }
     },
     {
@@ -21,6 +22,7 @@
       "errors": 0,
       "warnings": 6,
       "accepted": 0,
+      "excluded": 0,
       "codes": {
         "indistinguishable_tariffs": 6
       }
@@ -41,6 +43,17 @@
       }
     ],
     "published": [
+      {
+        "file": "tariffs/2026.json",
+        "1.0.0": {
+          "valid": false,
+          "errors": 48
+        },
+        "1.0.1": {
+          "valid": true,
+          "errors": 0
+        }
+      },
       {
         "file": "tariffs/2027.json",
         "1.0.0": {
