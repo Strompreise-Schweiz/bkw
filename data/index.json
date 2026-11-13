@@ -3,6 +3,7 @@
   "organization": "BKW Energie AG",
   "slug": "bkw",
   "vse_id": "CH10222012345",
+  "elcom_id": 36,
   "website": "https://www.bkw.ch",
   "license": "CC-BY-4.0",
   "repository": "https://github.com/Strompreise-Schweiz/bkw",
