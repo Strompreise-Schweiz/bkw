@@ -1,0 +1,417 @@
+{
+  "$comment": "What is wrong with the data of this utility. Errors block a year, warnings and accepted issues do not. Information on the VSE conformance does not block anything.",
+  "utility": "BKW Energie AG",
+  "slug": "bkw",
+  "summary": {
+    "errors": 0,
+    "warnings": 15,
+    "accepted": 0,
+    "incompleteDays": 1
+  },
+  "vseDefinitions": {
+    "1.0.0": "https://raw.githubusercontent.com/Strompreise-Schweiz/tariff-core/main/schemas/vse/ch-electricity-tariffs-openapi-1.0.0.yaml",
+    "1.0.1": "https://raw.githubusercontent.com/Strompreise-Schweiz/tariff-core/main/schemas/vse/ch-electricity-tariffs-openapi-1.0.1.yaml"
+  },
+  "sources": {
+    "tariffs": [
+      {
+        "name": "bkw-all",
+        "url": "https://www.bkw.ch/de/tarife-json",
+        "sha256": "7b97b24273dc1dba524e8f8663aa4259bf320343761ca34bcd6d903fc7659911",
+        "vse": {
+          "1.0.0": {
+            "valid": false,
+            "errors": 6428,
+            "summary": [
+              {
+                "path": "tariffs/*/endDate",
+                "message": "must match format \"date\"",
+                "count": 1960
+              },
+              {
+                "path": "tariffs/*/prices/municipalityTaxes/*/municipalityEnergy/*",
+                "message": "must have required property 'weekdays'",
+                "count": 1960
+              },
+              {
+                "path": "tariffs/*/startDate",
+                "message": "must match format \"date\"",
+                "count": 1960
+              },
+              {
+                "path": "tariffs/*/customerVoltageLevel",
+                "message": "must be integer",
+                "count": 425
+              },
+              {
+                "path": "tariffs/*/prices/energy/*/weekdays/*",
+                "message": "must be equal to one of the allowed values: Mo, Tu, We, Th, Fr, Sa, So",
+                "count": 52
+              },
+              {
+                "path": "tariffs/*/prices/power/*/weekdays/*",
+                "message": "must be equal to one of the allowed values: Mo, Tu, We, Th, Fr, Sa, So",
+                "count": 16
+              },
+              {
+                "path": "tariffs/*/prices/reactivePower/*/weekdays/*",
+                "message": "must be equal to one of the allowed values: Mo, Tu, We, Th, Fr, Sa, So",
+                "count": 16
+              },
+              {
+                "path": "tariffs/*",
+                "message": "must have required property 'customerVoltageLevel'",
+                "count": 12
+              },
+              {
+                "path": "tariffs/*/prices/municipalityTaxes/*/municipalityNumber",
+                "message": "must be integer",
+                "count": 9
+              },
+              {
+                "path": "tariffs/*/prices/energy/*",
+                "message": "must have required property 'weekdays'",
+                "count": 8
+              }
+            ]
+          },
+          "1.0.1": {
+            "valid": false,
+            "errors": 4354,
+            "summary": [
+              {
+                "path": "tariffs/*/endDate",
+                "message": "must match format \"date\"",
+                "count": 1960
+              },
+              {
+                "path": "tariffs/*/startDate",
+                "message": "must match format \"date\"",
+                "count": 1960
+              },
+              {
+                "path": "tariffs/*/customerVoltageLevel",
+                "message": "must be integer",
+                "count": 425
+              },
+              {
+                "path": "tariffs/*/prices/municipalityTaxes/*/municipalityNumber",
+                "message": "must be integer",
+                "count": 9
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "prices": [
+      {
+        "id": "feed-in",
+        "url": "https://api.bkw.ch/api/dyntariffs/v1/tariffs",
+        "enabled": true,
+        "days": 73,
+        "first": "2026-08-26",
+        "last": "2026-11-15"
+      }
+    ]
+  },
+  "tariffs": [
+    {
+      "year": 2026,
+      "published": true,
+      "online": true,
+      "repairs": [
+        {
+          "code": "overnight_window_split",
+          "detail": "split a window across midnight in two, because VSE 1.0.1 requires from < to",
+          "count": 26
+        },
+        {
+          "code": "datetime_to_date",
+          "detail": "removed the time 00:00:00 from a date",
+          "count": 3920
+        },
+        {
+          "code": "voltage_level_to_integer",
+          "detail": "converted customerVoltageLevel from text to a number",
+          "count": 425
+        }
+      ],
+      "issues": [
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "275 tariffs share regional_fees / Konzessionsabgabe/Redevance de concession / 5 /   / 2026-01-01"
+        },
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "278 tariffs share regional_fees / Konzessionsabgabe/Redevance de concession / 7 /   / 2026-01-01"
+        },
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "247 tariffs share regional_fees / Konzessionsabgabe für Zweitzähler // Redevance de concession pour compteurs secondaires / 7 /   / 2026-01-01"
+        },
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "24 tariffs share regional_fees / Redevance de Redevance énergie/Energieabgabe / 3 /   / 2026-01-01"
+        },
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "24 tariffs share regional_fees / Redevance de concession/Konzessionsabgabe / 3 /   / 2026-01-01"
+        },
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "24 tariffs share regional_fees / Redevance de Redevance énergie/Energieabgabe / 5 /   / 2026-01-01"
+        },
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "44 tariffs share regional_fees / Redevance de concession/Konzessionsabgabe / 5 /   / 2026-01-01"
+        },
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "24 tariffs share regional_fees / Redevance de Redevance énergie/Energieabgabe / 7 /   / 2026-01-01"
+        },
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "64 tariffs share regional_fees / Redevance de concession/Konzessionsabgabe / 7 /   / 2026-01-01"
+        }
+      ],
+      "excluded": [
+        {
+          "id": "regional-fees-konzessionsabgabe-redevance-de-concession-ne5-ca5429-45",
+          "tariffName": "Konzessionsabgabe/Redevance de concession",
+          "tariffType": "regional_fees",
+          "customerType": " ",
+          "customerVoltageLevel": 5,
+          "problems": [
+            "prices/municipalityTaxes/0/municipalityNumber: must be integer, is \"#N/A\""
+          ]
+        },
+        {
+          "id": "regional-fees-konzessionsabgabe-redevance-de-concession-ne5-ca5429-259",
+          "tariffName": "Konzessionsabgabe/Redevance de concession",
+          "tariffType": "regional_fees",
+          "customerType": " ",
+          "customerVoltageLevel": 5,
+          "problems": [
+            "prices/municipalityTaxes/0/municipalityNumber: must be integer, is \"#N/A\""
+          ]
+        },
+        {
+          "id": "regional-fees-konzessionsabgabe-redevance-de-concession-ne5-ca5429-277",
+          "tariffName": "Konzessionsabgabe/Redevance de concession",
+          "tariffType": "regional_fees",
+          "customerType": " ",
+          "customerVoltageLevel": 5,
+          "problems": [
+            "prices/municipalityTaxes/0/municipalityNumber: must be integer, is \"#N/A\""
+          ]
+        },
+        {
+          "id": "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-45",
+          "tariffName": "Konzessionsabgabe/Redevance de concession",
+          "tariffType": "regional_fees",
+          "customerType": " ",
+          "customerVoltageLevel": 7,
+          "problems": [
+            "prices/municipalityTaxes/0/municipalityNumber: must be integer, is \"#N/A\""
+          ]
+        },
+        {
+          "id": "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-262",
+          "tariffName": "Konzessionsabgabe/Redevance de concession",
+          "tariffType": "regional_fees",
+          "customerType": " ",
+          "customerVoltageLevel": 7,
+          "problems": [
+            "prices/municipalityTaxes/0/municipalityNumber: must be integer, is \"#N/A\""
+          ]
+        },
+        {
+          "id": "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-280",
+          "tariffName": "Konzessionsabgabe/Redevance de concession",
+          "tariffType": "regional_fees",
+          "customerType": " ",
+          "customerVoltageLevel": 7,
+          "problems": [
+            "prices/municipalityTaxes/0/municipalityNumber: must be integer, is \"#N/A\""
+          ]
+        },
+        {
+          "id": "regional-fees-konzessionsabgabe-fur-zweitzahler-redevance-de-concession-po-ne7-a78bd5-36",
+          "tariffName": "Konzessionsabgabe für Zweitzähler // Redevance de concession pour compteurs secondaires",
+          "tariffType": "regional_fees",
+          "customerType": " ",
+          "customerVoltageLevel": 7,
+          "problems": [
+            "prices/municipalityTaxes/0/municipalityNumber: must be integer, is \"#N/A\""
+          ]
+        },
+        {
+          "id": "regional-fees-konzessionsabgabe-fur-zweitzahler-redevance-de-concession-po-ne7-a78bd5-234",
+          "tariffName": "Konzessionsabgabe für Zweitzähler // Redevance de concession pour compteurs secondaires",
+          "tariffType": "regional_fees",
+          "customerType": " ",
+          "customerVoltageLevel": 7,
+          "problems": [
+            "prices/municipalityTaxes/0/municipalityNumber: must be integer, is \"#N/A\""
+          ]
+        },
+        {
+          "id": "regional-fees-konzessionsabgabe-fur-zweitzahler-redevance-de-concession-po-ne7-a78bd5-249",
+          "tariffName": "Konzessionsabgabe für Zweitzähler // Redevance de concession pour compteurs secondaires",
+          "tariffType": "regional_fees",
+          "customerType": " ",
+          "customerVoltageLevel": 7,
+          "problems": [
+            "prices/municipalityTaxes/0/municipalityNumber: must be integer, is \"#N/A\""
+          ]
+        }
+      ],
+      "vse": {
+        "1.0.0": {
+          "valid": false,
+          "errors": 61,
+          "summary": [
+            {
+              "path": "tariffs/*/prices/energy/*/weekdays/*",
+              "message": "must be equal to one of the allowed values: Mo, Tu, We, Th, Fr, Sa, So",
+              "count": 39
+            },
+            {
+              "path": "tariffs/*/prices/power/*/weekdays/*",
+              "message": "must be equal to one of the allowed values: Mo, Tu, We, Th, Fr, Sa, So",
+              "count": 8
+            },
+            {
+              "path": "tariffs/*/prices/reactivePower/*/weekdays/*",
+              "message": "must be equal to one of the allowed values: Mo, Tu, We, Th, Fr, Sa, So",
+              "count": 8
+            },
+            {
+              "path": "tariffs/*",
+              "message": "must have required property 'customerVoltageLevel'",
+              "count": 6
+            }
+          ]
+        },
+        "1.0.1": {
+          "valid": true,
+          "errors": 0,
+          "summary": []
+        }
+      }
+    },
+    {
+      "year": 2027,
+      "published": true,
+      "online": true,
+      "repairs": [
+        {
+          "code": "overnight_window_split",
+          "detail": "split a window across midnight in two, because VSE 1.0.1 requires from < to",
+          "count": 26
+        },
+        {
+          "code": "datetime_to_date",
+          "detail": "removed the time 00:00:00 from a date",
+          "count": 3920
+        },
+        {
+          "code": "voltage_level_to_integer",
+          "detail": "converted customerVoltageLevel from text to a number",
+          "count": 425
+        }
+      ],
+      "issues": [
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "323 tariffs share regional_fees / Konzessionsabgabe/Redevance de concession / 5 /   / 2027-01-01"
+        },
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "325 tariffs share regional_fees / Konzessionsabgabe/Redevance de concession / 7 /   / 2027-01-01"
+        },
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "155 tariffs share regional_fees / Konzessionsabgabe für Zweitzähler // Redevance de concession pour compteurs secondaires / 7 /   / 2027-01-01"
+        },
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "48 tariffs share regional_fees / Redevance de Redevance énergie/Energieabgabe / 3 /   / 2027-01-01"
+        },
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "48 tariffs share regional_fees / Redevance de Redevance énergie/Energieabgabe / 5 /   / 2027-01-01"
+        },
+        {
+          "severity": "warning",
+          "code": "indistinguishable_tariffs",
+          "message": "48 tariffs share regional_fees / Redevance de Redevance énergie/Energieabgabe / 7 /   / 2027-01-01"
+        }
+      ],
+      "excluded": [],
+      "vse": {
+        "1.0.0": {
+          "valid": false,
+          "errors": 61,
+          "summary": [
+            {
+              "path": "tariffs/*/prices/energy/*/weekdays/*",
+              "message": "must be equal to one of the allowed values: Mo, Tu, We, Th, Fr, Sa, So",
+              "count": 39
+            },
+            {
+              "path": "tariffs/*/prices/power/*/weekdays/*",
+              "message": "must be equal to one of the allowed values: Mo, Tu, We, Th, Fr, Sa, So",
+              "count": 8
+            },
+            {
+              "path": "tariffs/*/prices/reactivePower/*/weekdays/*",
+              "message": "must be equal to one of the allowed values: Mo, Tu, We, Th, Fr, Sa, So",
+              "count": 8
+            },
+            {
+              "path": "tariffs/*",
+              "message": "must have required property 'customerVoltageLevel'",
+              "count": 6
+            }
+          ]
+        },
+        "1.0.1": {
+          "valid": true,
+          "errors": 0,
+          "summary": []
+        }
+      }
+    }
+  ],
+  "prices": [
+    {
+      "id": "feed-in",
+      "days": 73,
+      "incomplete": [
+        {
+          "date": "2026-10-25",
+          "issues": [
+            "ends at 2026-10-25T23:00:00+01:00, expected 2026-10-26T00:00:00+01:00"
+          ]
+        }
+      ]
+    }
+  ],
+  "products": []
+}

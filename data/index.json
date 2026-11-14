@@ -1,5 +1,5 @@
 {
-  "$comment": "Stable entry point for this organization. All URLs below stay valid. Every path under data/ is also served under site.",
+  "$comment": "Stable entry point for this utility. Every path under data/ is also served under site.",
   "organization": "BKW Energie AG",
   "slug": "bkw",
   "vse_id": "CH10222012345",
@@ -8,27 +8,22 @@
   "license": "CC-BY-4.0",
   "repository": "https://github.com/Strompreise-Schweiz/bkw",
   "site": "https://data.strompreise-schweiz.ch/bkw/",
-  "static": {
-    "current": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/tariffs/current.json",
+  "checks": "https://data.strompreise-schweiz.ch/bkw/checks.json",
+  "tariffs": {
+    "current": "https://data.strompreise-schweiz.ch/bkw/tariffs/current.json",
     "years": {
-      "2026": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/tariffs/2026.json",
-      "2027": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/tariffs/2027.json"
+      "2026": "https://data.strompreise-schweiz.ch/bkw/tariffs/2026.json",
+      "2027": "https://data.strompreise-schweiz.ch/bkw/tariffs/2027.json"
     }
   },
-  "vse_conformance": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/vse-conformance.json",
-  "status": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/status.json",
-  "dynamic": [
+  "prices": [
     {
       "id": "feed-in",
       "name": "BKW dynamic feed-in remuneration",
-      "components": [
-        "feed_in"
-      ],
-      "valid_from": null,
-      "valid_to": null,
-      "latest": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/dynamic/feed-in/latest.json",
-      "archive": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/dynamic/feed-in/vse/{year}/{date}.json",
+      "latest": "https://data.strompreise-schweiz.ch/bkw/prices/feed-in/latest.json",
+      "archive": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/prices/feed-in/{year}/{date}.json",
       "source": "https://api.bkw.ch/api/dyntariffs/v1/tariffs"
     }
-  ]
+  ],
+  "products": []
 }
