@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Strompreise-Schweiz/tariff-core/main/schemas/curation/v1.schema.json",
+  "year": 2027,
+  "products": [
+    {
+      "id": "standard",
+      "name": "Energy Blue + Einheitstarif // Tarif unique",
+      "default": true,
+      "note": "Electricity and grid are the tariffs BKW marks with standardBasegroup. Metering and fees are proposed, not yet checked against the price sheet.",
+      "components": {
+        "electricity": "electricity-energy-blue",
+        "grid": "grid-einheitstarif-tarif-unique-ne7",
+        "metering": {
+          "tariff": "metering-niederspannung-ohne-wandlermessung-basse-tension-sans-mesure-ne7",
+          "options": [
+            "metering-niederspannung-mit-wandlermessung-basse-tension-avec-mesure-ne7",
+            "metering-virtuelle-messstelle-mesure-virtuelle-ne7"
+          ],
+          "howToFind": "Depends on the connection. Metering without transformer is the usual case for a household."
+        },
+        "regional_fees": {
+          "byMunicipality": {
+            "tariffNames": [
+              "Konzessionsabgabe/Redevance de concession",
+              "Redevance de concession/Konzessionsabgabe",
+              "Redevance de Redevance énergie/Energieabgabe"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

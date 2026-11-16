@@ -1,0 +1,2902 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Strompreise-Schweiz/tariff-core/main/schemas/product/v1.schema.json",
+  "id": "standard",
+  "name": "Energy Blue + Einheitstarif // Tarif unique",
+  "year": 2027,
+  "status": "suggested",
+  "default": true,
+  "note": "Electricity and grid are the tariffs BKW marks with standardBasegroup. Metering and fees are proposed, not yet checked against the price sheet.",
+  "dsoName": "BKW Energie AG",
+  "dsoNumber": 10222012345,
+  "pricesExcludeVat": true,
+  "total": {
+    "fixed": {
+      "electricity": [{"unit": "CHF_m", "value": 3.25}],
+      "grid": [{"unit": "CHF_m", "value": 8}],
+      "metering": [{"unit": "CHF_m", "value": 7.1667}],
+      "total": [{"unit": "CHF_m", "value": 18.4167}]
+    },
+    "windows": [
+      {
+        "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        "weekdays": ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+        "from": "00:00",
+        "to": "23:59",
+        "electricity": [{"unit": "CHF_kWh", "value": 0.071}],
+        "grid": [{"unit": "CHF_kW_m", "value": 0}, {"unit": "CHF_kWh", "value": 0.1208}],
+        "total": [{"unit": "CHF_kW_m", "value": 0}, {"unit": "CHF_kWh", "value": 0.1918}]
+      }
+    ],
+    "dynamic": []
+  },
+  "missing": [],
+  "municipalities": [
+    {
+      "number": 15137,
+      "name": "Adelboden",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 1}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 24"]
+    },
+    {
+      "number": 15508,
+      "name": "Aeschi (SO)",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-2"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15138,
+      "name": "Aeschi bei Spiez",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-3"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15346,
+      "name": "Affoltern im Emmental",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-4"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15059,
+      "name": "Alchenstorf",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-5"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13318,
+      "name": "Alle",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-6",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15192,
+      "name": "Allmendingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-7"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15320,
+      "name": "Amsoldingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-8"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15356,
+      "name": "Attiswil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-9"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.02}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15008,
+      "name": "Auswil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-10"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 11702,
+      "name": "Balm bei Günsberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-11"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15009,
+      "name": "Bannwil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-12"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.02}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 3000"]
+    },
+    {
+      "number": 14970,
+      "name": "Basse-Allaine",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-13",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-2"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.017}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 16654,
+      "name": "Basse-Vendline",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-14",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-3"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15144,
+      "name": "Beatenberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-16"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 11878,
+      "name": "Bellach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-17"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15238,
+      "name": "Bellmund",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-18"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.02}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15498,
+      "name": "Belp",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-19"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.014}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: auf NE 5"]
+    },
+    {
+      "number": 15206,
+      "name": "Belprahon",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-20"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15357,
+      "name": "Berken",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-21"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15477,
+      "name": "Bettenhausen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-22"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 11908,
+      "name": "Bettlach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-23"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13722,
+      "name": "Biberist",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-24"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.01}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 2000"]
+    },
+    {
+      "number": 13839,
+      "name": "Blauen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-25"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15010,
+      "name": "Bleienbach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-26"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13723,
+      "name": "Bolken",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-28"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15030,
+      "name": "Bolligen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-29"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 500"]
+    },
+    {
+      "number": 15275,
+      "name": "Boltigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-30"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13321,
+      "name": "Boncourt",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-31",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-5"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13274,
+      "name": "Bourrignon",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-33",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-6"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.017}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15170,
+      "name": "Bowil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-34"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13273,
+      "name": "Boécourt",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-27",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-4"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.01}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15031,
+      "name": "Bremgarten bei Bern",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-35"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15171,
+      "name": "Brenzikofen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-36"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15100,
+      "name": "Brüttelen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-37"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15322,
+      "name": "Buchholterberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-38"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.0075}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13325,
+      "name": "Bure",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-40",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-7"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15288,
+      "name": "Burgistein",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-41"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15011,
+      "name": "Busswil bei Melchnau",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-42"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15113,
+      "name": "Bätterkinden",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-15"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15145,
+      "name": "Bönigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-32"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 500"]
+    },
+    {
+      "number": 15240,
+      "name": "Bühl",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-39"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15208,
+      "name": "Champoz",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-43"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13275,
+      "name": "Châtillon (JU)",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-44",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-8"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 14965,
+      "name": "Clos du Doubs",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-45",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-9"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13328,
+      "name": "Coeuve",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-46",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-10"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.017}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15210,
+      "name": "Corcelles (BE)",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-47"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15082,
+      "name": "Corgémont",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-48"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13329,
+      "name": "Cornol",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-49",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-11"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13277,
+      "name": "Courchapoix",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-50",
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-51",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-12",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-13"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.028}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13330,
+      "name": "Courchavon",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-52",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-14"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.014}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13331,
+      "name": "Courgenay",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-53",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-15"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 16127,
+      "name": "Courrendlin",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-54",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-16"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.017}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13280,
+      "name": "Courroux",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-55",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-17"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15211,
+      "name": "Court",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-56"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13332,
+      "name": "Courtedoux",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-57",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-18"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13281,
+      "name": "Courtételle",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-58",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-19"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15212,
+      "name": "Crémines",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-59"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16627,
+      "name": "Damphreux-Lugnez",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-60",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-20"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13725,
+      "name": "Deitingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-63"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13282,
+      "name": "Delémont",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-64",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-21"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.017}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13283,
+      "name": "Develier",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-65",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-22"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.0156}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15261,
+      "name": "Diemtigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-66"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 13842,
+      "name": "Dittingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-67"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15049,
+      "name": "Dotzigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-68"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15603,
+      "name": "Drei Höfe",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-69"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 400"]
+    },
+    {
+      "number": 15148,
+      "name": "Därligen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-61"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15260,
+      "name": "Därstetten",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-62"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15347,
+      "name": "Dürrenroth",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-70"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 500"]
+    },
+    {
+      "number": 13284,
+      "name": "Ederswiler",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-71",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-23"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15311,
+      "name": "Eggiwil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-72"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15241,
+      "name": "Epsach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-73"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15323,
+      "name": "Eriz",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-74"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: -"]
+    },
+    {
+      "number": 15101,
+      "name": "Erlach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-75"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15262,
+      "name": "Erlenbach im Simmental",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-76"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15673,
+      "name": "Ersigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-77"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15213,
+      "name": "Eschert",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-78"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15043,
+      "name": "Evilard",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-79"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15324,
+      "name": "Fahrni",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-80"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13336,
+      "name": "Fahy",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-81",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-24"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15360,
+      "name": "Farnern",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-82"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 11986,
+      "name": "Feldbrunnen-St. Niklaus",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-83"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.007}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15196,
+      "name": "Ferenbalm",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-84"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15102,
+      "name": "Finsterhennen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-85"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 11937,
+      "name": "Flumenthal",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-86"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15626,
+      "name": "Fontenais",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-87",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-25"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15345,
+      "name": "Forst-Längenbühl",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-88"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15197,
+      "name": "Frauenkappelen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-89"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15172,
+      "name": "Freimettigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-90"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15139,
+      "name": "Frutigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-91"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15103,
+      "name": "Gals",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-92"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15104,
+      "name": "Gampelen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-93"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13728,
+      "name": "Gerlafingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-94"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15290,
+      "name": "Gerzensee",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-95"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15012,
+      "name": "Gondiswil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-96"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15361,
+      "name": "Graben",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-97"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 3000"]
+    },
+    {
+      "number": 13339,
+      "name": "Grandfontaine",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-98",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-26"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15214,
+      "name": "Grandval",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-99"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15149,
+      "name": "Grindelwald",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-100"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.005}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: -"]
+    },
+    {
+      "number": 16082,
+      "name": "Grosshöchstetten",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-101"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 400"]
+    },
+    {
+      "number": 15150,
+      "name": "Gsteigwiler",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-102"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15283,
+      "name": "Guggisberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-103"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15199,
+      "name": "Gurbrü",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-105"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15291,
+      "name": "Gurzelen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-106"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15270,
+      "name": "Guttannen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-107"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 11923,
+      "name": "Günsberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-104"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15152,
+      "name": "Habkern",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-108"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15242,
+      "name": "Hagneck",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-109"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15063,
+      "name": "Hasle bei Burgdorf",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-110"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16120,
+      "name": "Haute-Ajoie",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-111",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-27"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15624,
+      "name": "Haute-Sorne",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-112",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-28"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15325,
+      "name": "Heiligenschwendi",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-114"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15326,
+      "name": "Heimberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-115"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15362,
+      "name": "Heimenhausen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-116"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15064,
+      "name": "Heimiswil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-117"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15065,
+      "name": "Hellsau",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-118"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15175,
+      "name": "Herbligen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-119"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15243,
+      "name": "Hermrigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-120"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15364,
+      "name": "Herzogenbuchsee",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-121"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.0065}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 3000"]
+    },
+    {
+      "number": 15327,
+      "name": "Hilterfingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-122"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15329,
+      "name": "Homberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-124"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15330,
+      "name": "Horrenbach-Buchen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-125"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 12215,
+      "name": "Hubersdorf",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-126"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15349,
+      "name": "Huttwil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-127"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.01}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 4000"]
+    },
+    {
+      "number": 15174,
+      "name": "Häutligen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-113"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15067,
+      "name": "Höchstetten",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-123"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15365,
+      "name": "Inkwil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-128"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15638,
+      "name": "Innertkirchen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-129"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15245,
+      "name": "Ipsach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-130"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15155,
+      "name": "Iseltwald",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-131"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15040,
+      "name": "Ittigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-132"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15292,
+      "name": "Jaberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-133"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15244,
+      "name": "Jens",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-134"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16124,
+      "name": "Kallnach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-135"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 12650,
+      "name": "Kammersrohr",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-136"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15140,
+      "name": "Kandergrund",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-137"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 14999,
+      "name": "Kappelen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-138"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15293,
+      "name": "Kaufdorf",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-139"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15294,
+      "name": "Kehrsatz",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-140"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15176,
+      "name": "Kiesen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-141"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16083,
+      "name": "Kirchdorf (BE)",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-142"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15032,
+      "name": "Kirchlindach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-143"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15177,
+      "name": "Konolfingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-145"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15142,
+      "name": "Krattigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-146"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15200,
+      "name": "Kriechenwil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-147"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16672,
+      "name": "Kriegstetten",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-148"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.01}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: -"]
+    },
+    {
+      "number": 15033,
+      "name": "Köniz",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-144"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.019}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 14969,
+      "name": "La Baroche",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-149",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-29"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13308,
+      "name": "Lajoux (JU)",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-150",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-30"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.017}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15178,
+      "name": "Landiswil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-151"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: -"]
+    },
+    {
+      "number": 12626,
+      "name": "Langendorf",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-152"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.01}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: -"]
+    },
+    {
+      "number": 16606,
+      "name": "Langenthal",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-153"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.0088}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: -"]
+    },
+    {
+      "number": 15312,
+      "name": "Langnau im Emmental",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-154"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.025}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 400"]
+    },
+    {
+      "number": 15280,
+      "name": "Lauenen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-155"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13845,
+      "name": "Laufen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-156"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15201,
+      "name": "Laupen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-157"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15313,
+      "name": "Lauperswil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-158"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 13299,
+      "name": "Le Bémont",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-159",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-31"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.008}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15157,
+      "name": "Leissigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-160"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15276,
+      "name": "Lenk",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-161"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13303,
+      "name": "Les Enfers",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-162",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-32"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13306,
+      "name": "Les Genevez (JU)",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-163",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-33"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.012}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15215,
+      "name": "Loveresse",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-164"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13736,
+      "name": "Luterbach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-166"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.01}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: -"]
+    },
+    {
+      "number": 15106,
+      "name": "Lüscherz",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-165"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15350,
+      "name": "Lützelflüh",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-167"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15475,
+      "name": "Madiswil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-168"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 3000"]
+    },
+    {
+      "number": 15052,
+      "name": "Meienried",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-169"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15001,
+      "name": "Meikirch",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-170"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15053,
+      "name": "Meinisberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-171"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15273,
+      "name": "Meiringen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-172"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: -"]
+    },
+    {
+      "number": 13286,
+      "name": "Mervelier",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-173",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-34"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.017}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15247,
+      "name": "Merzligen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-174"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13680,
+      "name": "Mettembert",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-175",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-35"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15180,
+      "name": "Mirchel",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-176"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 14967,
+      "name": "Montfaucon",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-177",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-36"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 16669,
+      "name": "Moutier",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-179",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-37"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.0125}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13289,
+      "name": "Movelier",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-180",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-38"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15034,
+      "name": "Muri bei Bern",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-185"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15248,
+      "name": "Mörigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-178"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15202,
+      "name": "Mühleberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-181"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16622,
+      "name": "Münchenbuchsee",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-182"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.012}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15688,
+      "name": "Münsingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-183"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15107,
+      "name": "Müntschemier",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-184"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 400"]
+    },
+    {
+      "number": 13847,
+      "name": "Nenzlingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-186"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.0075}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 150"]
+    },
+    {
+      "number": 15204,
+      "name": "Neuenegg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-187"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16130,
+      "name": "Niederbipp",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-188"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15182,
+      "name": "Niederhünigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-189"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15301,
+      "name": "Niedermuhlern",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-190"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15367,
+      "name": "Niederönz",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-191"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15035,
+      "name": "Oberbalm",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-192"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15368,
+      "name": "Oberbipp",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-193"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15635,
+      "name": "Oberdiessbach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-194"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 100000"]
+    },
+    {
+      "number": 12502,
+      "name": "Oberdorf (SO)",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-195"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13737,
+      "name": "Obergerlafingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-196"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15191,
+      "name": "Oberhünigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-197"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15332,
+      "name": "Oberlangenegg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-198"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15183,
+      "name": "Oberthal",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-199"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15369,
+      "name": "Ochlenberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-200"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13709,
+      "name": "Oensingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-201"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: -"]
+    },
+    {
+      "number": 15019,
+      "name": "Oeschenbach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-202"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15184,
+      "name": "Oppligen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-203"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15250,
+      "name": "Orpund",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-204"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15089,
+      "name": "Orvin",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-205"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15041,
+      "name": "Ostermundigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-206"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15662,
+      "name": "Petit-Val",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-208"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15636,
+      "name": "Plateau de Diesse",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-209"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13290,
+      "name": "Pleigne",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-210",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-39"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.017}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15333,
+      "name": "Pohlern",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-211"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13347,
+      "name": "Porrentruy",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-212",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-40"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15658,
+      "name": "Péry-La Heutte",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-207"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15003,
+      "name": "Radelfingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-213"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15672,
+      "name": "Rapperswil (BE)",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-214"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15231,
+      "name": "Rebévelier",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-215"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13739,
+      "name": "Recherswil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-216"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15221,
+      "name": "Reconvilier",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-217"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15143,
+      "name": "Reichenbach im Kandertal",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-218"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15020,
+      "name": "Reisiswil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-219"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16651,
+      "name": "Reutigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-220"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15482,
+      "name": "Riedholz",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-221"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16608,
+      "name": "Riggisberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-222"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15222,
+      "name": "Roches (BE)",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-223"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13848,
+      "name": "Roggenburg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-224"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15022,
+      "name": "Rohrbach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-225"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15023,
+      "name": "Rohrbachgraben",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-226"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15093,
+      "name": "Romont (BE)",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-227"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13292,
+      "name": "Rossemaison",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-229",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-41"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15185,
+      "name": "Rubigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-231"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15078,
+      "name": "Rumendingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-235"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15370,
+      "name": "Rumisberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-236"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13849,
+      "name": "Röschenz",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-228"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15314,
+      "name": "Röthenbach im Emmental",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-230"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15315,
+      "name": "Rüderswil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-232"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.01}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15304,
+      "name": "Rüeggisberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-233"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15351,
+      "name": "Rüegsau",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-234"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15284,
+      "name": "Rüschegg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-237"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15079,
+      "name": "Rüti bei Lyssach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-238"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15024,
+      "name": "Rütschelen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-239"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 12879,
+      "name": "Rüttenen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-240"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15281,
+      "name": "Saanen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-241"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15223,
+      "name": "Saicourt",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-242"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 14966,
+      "name": "Saignelégier",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-243",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-42"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.008}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13316,
+      "name": "Saint-Brais",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-244",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-43"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.012}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15632,
+      "name": "Sauge",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-245"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13293,
+      "name": "Saulcy",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-246",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-44"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15224,
+      "name": "Saules (BE)",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-247"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15163,
+      "name": "Saxeten",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-248"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 200"]
+    },
+    {
+      "number": 15316,
+      "name": "Schangnau",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-249"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15225,
+      "name": "Schelten",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-250"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15253,
+      "name": "Scheuren",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-251"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15254,
+      "name": "Schwadernau",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-253"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15476,
+      "name": "Schwarzenburg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-254"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15025,
+      "name": "Schwarzhäusern",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-255"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.02}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 3000"]
+    },
+    {
+      "number": 15005,
+      "name": "Schüpfen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-252"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: ab 20'000 kWh 1.0 Rp./kWh"]
+    },
+    {
+      "number": 15674,
+      "name": "Seeberg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-256"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15006,
+      "name": "Seedorf (BE)",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-257"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.0075}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: -"]
+    },
+    {
+      "number": 15226,
+      "name": "Seehof",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-258"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15306,
+      "name": "Seftigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-259"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13003,
+      "name": "Selzach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-260"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 600"]
+    },
+    {
+      "number": 15317,
+      "name": "Signau",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-261"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15335,
+      "name": "Sigriswil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-262"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15095,
+      "name": "Sonceboz-Sombeval",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-263"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15228,
+      "name": "Sorvilier",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-264"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13317,
+      "name": "Soubey",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-265",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-45"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.01}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 13295,
+      "name": "Soyhières",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-266",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-46"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15267,
+      "name": "Spiez",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-267"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15277,
+      "name": "St. Stephan",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-268"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16129,
+      "name": "Steffisburg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-269"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 600"]
+    },
+    {
+      "number": 15036,
+      "name": "Stettlen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-270"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15637,
+      "name": "Stocken-Höfen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-271"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15255,
+      "name": "Studen (BE)",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-272"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13741,
+      "name": "Subingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-273"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.01}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: -"]
+    },
+    {
+      "number": 15256,
+      "name": "Sutz-Lattrigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-274"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15230,
+      "name": "Tavannes",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-276"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15338,
+      "name": "Thierachern",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-277"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15339,
+      "name": "Thun",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-279"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.028}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 10800"]
+    },
+    {
+      "number": 15026,
+      "name": "Thunstetten",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-280"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16128,
+      "name": "Thurnen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-281"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15372,
+      "name": "Thörigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-278"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15307,
+      "name": "Toffen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-282"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15353,
+      "name": "Trachselwald",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-283"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15109,
+      "name": "Treiten",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-284"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15318,
+      "name": "Trub",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-285"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15319,
+      "name": "Trubschachen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-286"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15110,
+      "name": "Tschugg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-287"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 14978,
+      "name": "Twann-Tüscherz",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-288"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15257,
+      "name": "Täuffelen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-275"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15340,
+      "name": "Uebeschi",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-289"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15341,
+      "name": "Uetendorf",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-290"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15342,
+      "name": "Unterlangenegg",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-291"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15639,
+      "name": "Uttigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-292"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15131,
+      "name": "Utzenstorf",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-293"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16119,
+      "name": "Val Terbi",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-294",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-47"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15661,
+      "name": "Valbirse",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-295"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15037,
+      "name": "Vechigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-296"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13353,
+      "name": "Vendlincourt",
+      "tariffs": [
+        "regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-297",
+        "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-48"
+      ],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0", "Keine Deckelung // Pas de plafond"]
+    },
+    {
+      "number": 15111,
+      "name": "Vinelz",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-298"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15343,
+      "name": "Wachseldorn",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-299"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: -"]
+    },
+    {
+      "number": 13850,
+      "name": "Wahlen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-300"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15310,
+      "name": "Wald (BE)",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-301"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15188,
+      "name": "Walkringen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-302"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15373,
+      "name": "Walliswil bei Niederbipp",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-303"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15374,
+      "name": "Walliswil bei Wangen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-304"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15258,
+      "name": "Walperswil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-305"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15354,
+      "name": "Walterswil (BE)",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-306"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16652,
+      "name": "Wangen an der Aare",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-307"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15309,
+      "name": "Wattenwil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-308"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 16596,
+      "name": "Welschenrohr-Gänsbrunnen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-309"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15194,
+      "name": "Wichtrach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-310"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15377,
+      "name": "Wiedlisbach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-311"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15133,
+      "name": "Wiler bei Utzenstorf",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-312"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15205,
+      "name": "Wileroltigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-313"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15268,
+      "name": "Wimmis",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-314"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 0"]
+    },
+    {
+      "number": 15038,
+      "name": "Wohlen bei Bern",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-315"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15189,
+      "name": "Worb",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-316"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.02}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15259,
+      "name": "Worben",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-317"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15081,
+      "name": "Wynigen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-318"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15355,
+      "name": "Wyssachen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-319"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15135,
+      "name": "Zielebach",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-321"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.011}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15039,
+      "name": "Zollikofen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-322"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13743,
+      "name": "Zuchwil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-323"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.006}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: -"]
+    },
+    {
+      "number": 15278,
+      "name": "Zweisimmen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-324"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 13851,
+      "name": "Zwingen",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-325"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    },
+    {
+      "number": 15190,
+      "name": "Zäziwil",
+      "tariffs": ["regional-fees-konzessionsabgabe-redevance-de-concession-ne7-ca5429-320"],
+      "fixed": [],
+      "energy": [{"unit": "CHF_kWh", "value": 0.015}],
+      "comments": ["Deckelung in CHF/a // Plafond en CHF/an: 300"]
+    }
+  ],
+  "components": {
+    "electricity": {
+      "basis": "standardBasegroup",
+      "tariff": {
+        "tariffName": "Energy Blue",
+        "tariffType": "electricity",
+        "standardBasegroup": true,
+        "tariffForm": "constant",
+        "startDate": "2027-01-01",
+        "endDate": "2027-12-31",
+        "comment": "",
+        "customerType": "Energiebezug kleiner 50 MWh/a; Prélèvement d’électricité annuel inférieur à 50 MWh",
+        "prices": {
+          "base": {"price": 3.25, "priceUnit": "CHF/M"},
+          "energy": [
+            {
+              "from": "00:00",
+              "to": "00:00",
+              "price": 0.071,
+              "priceUnit": "CHF/kWh",
+              "months": [],
+              "weekdays": []
+            }
+          ]
+        },
+        "id": "electricity-energy-blue"
+      }
+    },
+    "grid": {
+      "basis": "standardBasegroup",
+      "tariff": {
+        "customerVoltageLevel": 7,
+        "tariffName": "Einheitstarif // Tarif unique",
+        "tariffType": "grid",
+        "standardBasegroup": true,
+        "tariffForm": "constant",
+        "startDate": "2027-01-01",
+        "endDate": "2027-12-31",
+        "comment": "",
+        "customerType": "Energiebezug kleiner 50 MWh/a; Prélèvement d’électricité annuel inférieur à 50 MWh",
+        "prices": {
+          "base": {"price": 8, "priceUnit": "CHF/M"},
+          "energy": [
+            {
+              "from": "00:00",
+              "to": "00:00",
+              "price": 0.1208,
+              "priceUnit": "CHF/kWh",
+              "months": [],
+              "weekdays": []
+            }
+          ],
+          "power": [
+            {
+              "from": "00:00",
+              "to": "00:00",
+              "price": 0,
+              "priceUnit": "CHF/kW/M",
+              "months": [],
+              "weekdays": []
+            }
+          ],
+          "reactivePower": [
+            {
+              "from": "00:00",
+              "to": "00:00",
+              "price": 0,
+              "priceUnit": "CHF/kVarh",
+              "months": [],
+              "weekdays": []
+            }
+          ],
+          "refundStorage": {"price": 0.1208, "priceUnit": "CHF/kWh"}
+        },
+        "id": "grid-einheitstarif-tarif-unique-ne7"
+      }
+    },
+    "metering": {
+      "basis": "suggested",
+      "tariff": {
+        "customerVoltageLevel": 7,
+        "tariffName": "Niederspannung ohne Wandlermessung // Basse tension sans mesure par transformateur",
+        "tariffType": "metering",
+        "tariffForm": "constant",
+        "startDate": "2027-01-01",
+        "endDate": "2027-12-31",
+        "comment": "",
+        "customerType": "Niederspannung NS ohne Wandlermessung; Basse tension BT sans mesure par transformateur",
+        "prices": {"base": {"price": 7.1667, "priceUnit": "CHF/M"}},
+        "id": "metering-niederspannung-ohne-wandlermessung-basse-tension-sans-mesure-ne7"
+      },
+      "howToFind": "Depends on the connection. Metering without transformer is the usual case for a household.",
+      "options": [
+        {
+          "id": "metering-niederspannung-mit-wandlermessung-basse-tension-avec-mesure-ne7",
+          "tariffName": "Niederspannung mit Wandlermessung // Basse tension avec mesure par transformateur",
+          "fixed": [{"unit": "CHF_m", "value": 12.5}]
+        },
+        {
+          "id": "metering-virtuelle-messstelle-mesure-virtuelle-ne7",
+          "tariffName": "Virtuelle Messstelle // Mesure virtuelle",
+          "fixed": [{"unit": "CHF_m", "value": 1.41667}]
+        }
+      ]
+    },
+    "regional_fees": {
+      "basis": "suggested",
+      "byMunicipality": {
+        "tariffNames": [
+          "Konzessionsabgabe/Redevance de concession",
+          "Redevance de concession/Konzessionsabgabe",
+          "Redevance de Redevance énergie/Energieabgabe"
+        ]
+      }
+    }
+  },
+  "_meta": {
+    "schemaVersion": "2.0",
+    "vseVersion": "1.0.1",
+    "generator": {
+      "name": "tariff-core",
+      "version": "5.0.0",
+      "url": "https://github.com/Strompreise-Schweiz/tariff-core"
+    },
+    "tariffs": "tariffs/2027.json",
+    "days": null,
+    "notes": [
+      "grid-einheitstarif-tarif-unique-ne7: reactive power is not included",
+      "regional fees in neither the total nor the municipalities: Konzessionsabgabe für Zweitzähler // Redevance de concession pour compteurs secondaires (155 tariffs); regional-fees-redevance-energetique-jura-kantonale-energieabgabe-jura-ne7",
+      "the total is without municipal fees: add those of your municipality from municipalities"
+    ]
+  }
+}

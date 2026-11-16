@@ -7,7 +7,7 @@
     "vseVersion": "1.0.1",
     "generator": {
       "name": "tariff-core",
-      "version": "4.0.0",
+      "version": "5.0.0",
       "url": "https://github.com/Strompreise-Schweiz/tariff-core"
     },
     "year": 2027,
@@ -2318,7 +2318,7 @@
           "priceUnit": "CHF/kWh"
         },
         "dynamic": {
-          "url": "https://data.strompreise-schweiz.ch/bkw/prices/feed-in/latest.json",
+          "url": "https://data.strompreise-schweiz.ch/bkw/tariffs/current/grid-sonne-scheint-plein-soleil-ne7.json",
           "sourceUrl": "https://api.bkw.ch/api/dyntariffs/v1/tariffs"
         }
       },
@@ -34523,5 +34523,42 @@
       "id": "regional-fees-redevance-de-redevance-energie-energieabgabe-ne7-ca5429-48"
     }
   ],
-  "products": []
+  "products": [
+    {
+      "id": "standard",
+      "name": "Energy Blue + Einheitstarif // Tarif unique",
+      "default": true,
+      "note": "Electricity and grid are the tariffs BKW marks with standardBasegroup. Metering and fees are proposed, not yet checked against the price sheet.",
+      "components": {
+        "electricity": {
+          "tariff": "electricity-energy-blue",
+          "basis": "standardBasegroup"
+        },
+        "grid": {
+          "tariff": "grid-einheitstarif-tarif-unique-ne7",
+          "basis": "standardBasegroup"
+        },
+        "metering": {
+          "tariff": "metering-niederspannung-ohne-wandlermessung-basse-tension-sans-mesure-ne7",
+          "options": [
+            "metering-niederspannung-mit-wandlermessung-basse-tension-avec-mesure-ne7",
+            "metering-virtuelle-messstelle-mesure-virtuelle-ne7"
+          ],
+          "howToFind": "Depends on the connection. Metering without transformer is the usual case for a household.",
+          "basis": "suggested"
+        },
+        "regional_fees": {
+          "byMunicipality": {
+            "tariffNames": [
+              "Konzessionsabgabe/Redevance de concession",
+              "Redevance de concession/Konzessionsabgabe",
+              "Redevance de Redevance énergie/Energieabgabe"
+            ]
+          },
+          "basis": "suggested"
+        }
+      },
+      "status": "suggested"
+    }
+  ]
 }

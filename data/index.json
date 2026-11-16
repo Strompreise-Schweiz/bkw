@@ -9,7 +9,21 @@
   "repository": "https://github.com/Strompreise-Schweiz/bkw",
   "site": "https://data.strompreise-schweiz.ch/bkw/",
   "checks": "https://data.strompreise-schweiz.ch/bkw/checks.json",
-  "products": [],
+  "products": [
+    {
+      "id": "standard",
+      "name": "Energy Blue + Einheitstarif // Tarif unique",
+      "default": [
+        2026,
+        2027
+      ],
+      "years": {
+        "2026": "https://data.strompreise-schweiz.ch/bkw/products/standard/2026.json",
+        "2027": "https://data.strompreise-schweiz.ch/bkw/products/standard/2027.json"
+      },
+      "days": null
+    }
+  ],
   "tariffs": {
     "current": "https://data.strompreise-schweiz.ch/bkw/tariffs/current.json",
     "years": {
