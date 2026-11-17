@@ -1,5 +1,5 @@
 {
-  "$comment": "Stable entry point for this utility. Every path under data/ is also served under site.",
+  "$comment": "Stable entry point for this utility. Every path under data/ is also served under site. Start with products: the default product is what a household pays without choosing anything.",
   "organization": "BKW Energie AG",
   "slug": "bkw",
   "vse_id": "CH10222012345",
@@ -9,21 +9,13 @@
   "repository": "https://github.com/Strompreise-Schweiz/bkw",
   "site": "https://data.strompreise-schweiz.ch/bkw/",
   "checks": "https://data.strompreise-schweiz.ch/bkw/checks.json",
+  "products": [],
   "tariffs": {
     "current": "https://data.strompreise-schweiz.ch/bkw/tariffs/current.json",
     "years": {
       "2026": "https://data.strompreise-schweiz.ch/bkw/tariffs/2026.json",
       "2027": "https://data.strompreise-schweiz.ch/bkw/tariffs/2027.json"
-    }
-  },
-  "prices": [
-    {
-      "id": "feed-in",
-      "name": "BKW dynamic feed-in remuneration",
-      "latest": "https://data.strompreise-schweiz.ch/bkw/prices/feed-in/latest.json",
-      "archive": "https://raw.githubusercontent.com/Strompreise-Schweiz/bkw/main/data/prices/feed-in/{year}/{date}.json",
-      "source": "https://api.bkw.ch/api/dyntariffs/v1/tariffs"
-    }
-  ],
-  "products": []
+    },
+    "days": []
+  }
 }
