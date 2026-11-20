@@ -109,9 +109,9 @@
         "id": "feed-in",
         "url": "https://api.bkw.ch/api/dyntariffs/v1/tariffs",
         "enabled": true,
-        "days": 78,
+        "days": 79,
         "first": "2026-08-26",
-        "last": "2026-11-20"
+        "last": "2026-11-21"
       }
     ]
   },
@@ -405,7 +405,7 @@
       "tariffs": [
         "2027/grid-sonne-scheint-plein-soleil-ne7"
       ],
-      "days": 78,
+      "days": 79,
       "incomplete": [],
       "withoutTariff": [
         "2026-08-26",
@@ -485,7 +485,8 @@
         "2026-11-17",
         "2026-11-18",
         "2026-11-19",
-        "2026-11-20"
+        "2026-11-20",
+        "2026-11-21"
       ]
     }
   ],
